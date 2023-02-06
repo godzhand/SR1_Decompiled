@@ -3,7 +3,7 @@
 #include "ints.h";
 #include "unknown_data_types.h";
 
-void F_multi_mode_823a5a5c(void)
+void F_823a5a5c_multi_mode(void)
 
 {
   undefined uVar1;
@@ -70,7 +70,7 @@ void F_multi_mode_823a5a5c(void)
   Function_8265ED68(*puVar11,uVar16);
   uVar16 = uVar18;
   if (DAT_835f4ac6 != '\0') {
-    uVar8 = FUN_8264ddc8(0xffffffff82070ce0,0);
+    uVar8 = FUN_8264ddc8(str_82070ce0_MULTI_LOBBY_GAME_MODE,0);
     uVar9 = FUN_82534cb8(0xffffffff83d6a2f8,uVar8);
     uVar16 = 0xffffffff8203c1a4;
     if ((uVar9 & 0xffffffff) != 0) {
@@ -91,7 +91,7 @@ void F_multi_mode_823a5a5c(void)
     Function_8265ED68(puVar11[2],0xffffffff8203c1a4);
   }
   else {
-    uVar8 = FUN_8264ddc8(0xffffffff82070cf8,0);
+    uVar8 = FUN_8264ddc8(str_82070cf8_MULTI_LOBBY_GAME_LEVEL,0);
     uVar10 = FUN_82534cb8(0xffffffff83d6a2f8,uVar8);
     uVar9 = uVar18;
     if ((uVar10 & 0xffffffff) != 0) {
@@ -104,7 +104,7 @@ LAB_823a5c60:
     uVar9 = 0xffffffff8203c1a4;
   }
   else {
-    uVar8 = FUN_8264ddc8(0xffffffff82070d10,0);
+    uVar8 = FUN_8264ddc8(str_82070d10_MULTI_LOBBY_GAME_STATUS,0);
     uVar9 = FUN_82534cb8(0xffffffff83d6a2f8,uVar8);
     if ((uVar9 & 0xffffffff) == 0) goto LAB_823a5c60;
   }
@@ -131,7 +131,7 @@ LAB_823a5c60:
       Function_8265ED68(puVar13[2],0xffffffff8203c1a4);
     }
     else {
-      uVar8 = FUN_8264ddc8(0xffffffff82070d28,0);
+      uVar8 = FUN_8264ddc8(str_82070d28_MULTI_LOBBY_UNKNOWN, 0);
       uVar10 = FUN_82534cb8(0xffffffff83d6a2f8,uVar8);
       uVar9 = uVar18;
       if ((uVar10 & 0xffffffff) != 0) {
@@ -149,7 +149,7 @@ LAB_823a5c60:
     lVar15 = countLeadingZeros((int)uVar8);
     if (((ulonglong)(lVar15 << 0x20) >> 0x25 & 1) == 1) {
       if (DAT_835f4ac6 != '\0') {
-        uVar8 = 0xffffffff82070d74;
+        uVar8 = str_82070d74_MULTI_LOBBY_WAITING;
         goto LAB_823a5ec0;
       }
       uVar18 = 0xffffffff8203c1a4;
@@ -160,7 +160,7 @@ LAB_823a5c60:
       Function_8265ED68(puVar13[3],0xffffffff8203c1a4,&stack0x000000c0);
     }
     else {
-      uVar8 = FUN_8264ddc8(0xffffffff82070d58,0);
+      uVar8 = FUN_8264ddc8(str_82070d58_MULTI_LOBBY_START_IN_COUNTS,0);
       uVar9 = FUN_82534cb8(0xffffffff83d6a2f8,uVar8);
       if ((uVar9 & 0xffffffff) != 0) {
         uVar18 = uVar9;
