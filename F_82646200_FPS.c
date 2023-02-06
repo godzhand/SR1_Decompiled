@@ -3,7 +3,7 @@
 #include "ints.h";
 #include "unknown_data_types.h";
 
-void FPS_Function_82646200(undefined8 param_1,double param_2)
+void F_82646200_FPS(undefined8 param_1,double param_2)
 
 {
   float fVar1;
@@ -32,7 +32,7 @@ void FPS_Function_82646200(undefined8 param_1,double param_2)
   DAT_835f4d34 = DAT_835f4d34 + 1;
   dVar8 = extraout_f1;
   if (bool_LaunchFPS_Unlock_Funct_835f4d4c == '\0') {
-    LaunchFPS_Unlock_Function_82646148();
+    F_82646148_FPS_Launch();
     bool_LaunchFPS_Unlock_835f4d4c = '\x01';
   }
   if (bool_835f4d4c == 0) {
