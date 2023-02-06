@@ -1,4 +1,8 @@
-#include "strings.h"
+#include "booleans.h";
+#include "strings.h";
+#include "ints.h";
+#include "unknown_data_types.h";
+
 void F_multi_mode_823a5a5c(void)
 
 {
